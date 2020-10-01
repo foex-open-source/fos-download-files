@@ -1,0 +1,55 @@
+
+
+{
+    "name":"FOS - Download File(s)"
+   ,"version":"20.1.1"
+   ,"description":"Download of database-stored BLOBs and CLOBs. Multiple files are zipped automatically.\r\n\u003Ch4\u003EFree Plug-in under MIT License\u003C\/h4\u003E\r\n\u003Cp\u003E\r\nAll FOS plug-ins are released under MIT License, which essentially means it is free for everyone to use, no matter if commercial or private use. \r\n\u003C\/p\u003E\r\n\u003Ch4\u003EOverview\u003C\/h4\u003E\r\n\u003Cp\u003EUse the \u003Cstrong\u003EFOS - Download File(s)\u003C\/strong\u003E plug-in to start the browser download of files stored in the database. The files can be compiled via a SQL query or procedurally in a PL\/SQL code block. If multiple files are returned, they will be zipped automatically. A single file can optionally be zipped as well. The files can be BLOBs or CLOBs.\u003C\/p\u003E\n\u003Cp\u003EThis plug-in must be instantiated as a Before Header process. If the server-side condition passes, the download will commence and the page will not continue to load.\u003C\/p\u003E"
+   ,"keywords":[
+        "download"
+       ,"files"
+       ,"clob"
+       ,"blob"
+    ]
+   ,"license":"MIT"
+   ,"commercial":"No"
+   ,"commercially_supported":"Yes"
+   ,"homepage":"https:\/\/github.com\/foex-open-source\/fos-download-files"
+   ,"bugs":{
+        "url":"https:\/\/github.com\/foex-open-source\/fos-download-files\/issues"
+       ,"email":"support@fos.world"
+    }
+   ,"author":{
+        "name":"FOEX GmbH"
+       ,"email":"office@fos.world"
+       ,"url":"https:\/\/foex.at\/fos\/"
+       ,"twitter":"@foexopensource"
+    }
+   ,"repository":{
+        "type":"git"
+       ,"url":"https:\/\/github.com\/foex-open-source\/fos-download-files.git"
+    }
+   ,"oracle":{
+        "versions":[
+            "12.1.0.1"
+           ,"12.2.0.1"
+           ,"18.0.0.0"
+           ,"19.0.0.0"
+        ]
+       ,"apex":{
+            "versions":[
+                "19.2.0"
+               ,"20.1.0"
+            ]
+           ,"plugin":{
+                "internalName":"COM.FOS.DOWNLOAD_FILES"
+               ,"type":"process"
+               ,"demo":"https:\/\/fos.world\/ords\/f?p=10000:1070"
+               ,"previewImage":"https:\/\/fos.world\/ords\/fos_master_ws\/fos-image\/COM.FOS.DOWNLOAD_FILES"
+            }
+        }
+    }
+}
+
+
+
+
