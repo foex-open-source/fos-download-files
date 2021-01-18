@@ -1,5 +1,3 @@
-
-
 create or replace package com_fos_download_files
 as
 
@@ -11,7 +9,5 @@ as
 
 end;
 /
-
-
 
 
