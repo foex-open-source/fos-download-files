@@ -36,10 +36,12 @@ prompt APPLICATION 102 - FOS Dev - Plugin Master
 --     PLUGIN: 134108205512926532
 --     PLUGIN: 1039471776506160903
 --     PLUGIN: 547902228942303344
+--     PLUGIN: 217651153971039957
 --     PLUGIN: 412155278231616931
---     PLUGIN: 1200087692794692554
+--     PLUGIN: 1389837954374630576
 --     PLUGIN: 461352325906078083
 --     PLUGIN: 13235263798301758
+--     PLUGIN: 216426771609128043
 --     PLUGIN: 37441962356114799
 --     PLUGIN: 1846579882179407086
 --     PLUGIN: 8354320589762683
@@ -47,6 +49,7 @@ prompt APPLICATION 102 - FOS Dev - Plugin Master
 --     PLUGIN: 106296184223956059
 --     PLUGIN: 35822631205839510
 --     PLUGIN: 2674568769566617
+--     PLUGIN: 183507938916453268
 --     PLUGIN: 14934236679644451
 --     PLUGIN: 2600618193722136
 --     PLUGIN: 2657630155025963
@@ -55,6 +58,7 @@ prompt APPLICATION 102 - FOS Dev - Plugin Master
 --     PLUGIN: 98648032013264649
 --     PLUGIN: 455014954654760331
 --     PLUGIN: 98504124924145200
+--     PLUGIN: 212503470416800524
 --   Manifest End
 --   Version:         19.2.0.00.18
 --   Instance ID:     250144500186934
@@ -191,7 +195,7 @@ wwv_flow_api.create_plugin(
 '    l_zipping         boolean;',
 'begin',
 '    -- debug',
-'    if apex_application.g_debug ',
+'    if apex_application.g_debug and substr(:DEBUG,6) >= 6 ',
 '    then',
 '        apex_plugin_util.debug_process',
 '          ( p_plugin  => p_plugin',
@@ -418,7 +422,7 @@ wwv_flow_api.create_plugin(
 '<li>Start the download when clicking on a link. Pre-build a link with the request value built in. When clicking on the link the download will start and the page will not proceed to reload.</li>',
 '</ul>',
 '</p>'))
-,p_version_identifier=>'21.1.0'
+,p_version_identifier=>'21.2.0'
 ,p_about_url=>'https://fos.world'
 ,p_plugin_comment=>'@fos-auto-return-to-page'
 );
