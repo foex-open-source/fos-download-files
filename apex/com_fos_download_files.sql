@@ -422,7 +422,7 @@ wwv_flow_api.create_plugin(
 '<li>Start the download when clicking on a link. Pre-build a link with the request value built in. When clicking on the link the download will start and the page will not proceed to reload.</li>',
 '</ul>',
 '</p>'))
-,p_version_identifier=>'21.2.0'
+,p_version_identifier=>'22.1.0'
 ,p_about_url=>'https://fos.world'
 ,p_plugin_comment=>'@fos-auto-return-to-page'
 );
